@@ -41,7 +41,7 @@ Each instance method in a XCTestCase subclass with a name that begins with 'test
 
 ```
 func testExample() {
-    // Use XCTAssert and related functions to verify your tests produce the correct results
+    // Code to test
 }
 ```
 
