@@ -8,7 +8,7 @@ A simple list of XCTest setup functions and assertions.
 ## XCTestCase
 
 ###Class Set Up and Tear Down
-For each test class, testing starts by running the **class setup** method and ends with the **class teardown** method. You can override both class methods to run custom code before and after all of the test methods in the class execute.
+For each test class, testing starts by running the **class** `setUp()` method and ends with the **class** `tearDown()` method. You can override both class methods to run custom code before and after all of the test methods in the class execute.
 
 ```
 override class func setUp() {
@@ -21,7 +21,7 @@ override class func tearDown() {
 ```
 
 ###Instance Set Up and Tear Down
-For each test method, a new instance of the class is allocated and its **instance setup** method executed. After that it runs the test method, and after that the **instance teardown** method. This sequence repeats for all the test methods in the class. After the last test method teardown in the class has been run, Xcode executes the class teardown method and moves on to the next class.
+For each test method, a new instance of the class is allocated and its **instance** `setUp()` method executed. After that it runs the test method, and after that the **instance** `tearDown()` method. This sequence repeats for all the test methods in the class. After the last test method teardown in the class has been run, Xcode executes the class teardown method and moves on to the next class.
 
 ```
 override func setUp() {
